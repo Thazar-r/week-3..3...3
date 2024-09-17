@@ -8,7 +8,7 @@ class Band(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
-    hometown = Column(String, nullable=False)
+    hometown = Column(String, nullable=True)
 
     concerts = relationship('Concert', back_populates='band')
 
